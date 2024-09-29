@@ -9,16 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(alignment: .leading) {
+            Image("me")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 200, height: 200)
+                .clipShape(Circle())
+            Text("Haya Albaker")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .foregroundColor(.pink)
+            Text("Hi")
+                 .font(.title2)
+                 .foregroundColor(.gray)
+            
         }
-        .padding()
-    }
+
+        }
 }
 
 #Preview {
     ContentView()
 }
+
+
+
